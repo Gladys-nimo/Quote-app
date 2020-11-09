@@ -1,9 +1,6 @@
-<p> this quote {{quote.quote}} is published 
-    {{quote.name}} and 
-    the author is {{quote.author}}
-</p>
+<p> {{quote.quote}} </p>
 
-<button class="col btn btn-success" (click)= 'upvote'()>like <i class="fa fa-thumbs-up" id="like"></i></button>
+<button class="col btn btn-success" (click)= 'upvote'()>{{quote.likes}}<i class="fa fa-thumbs-up" id="like"></i></button>
 <br>
-<button class="col btn btn-danger" (click)= 'downvote'()>dislike <i class="fa fa-thumbs-down" id="dislike"></i></button>
-<button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button> 
+<button class="col btn btn-danger" (click)= 'downvote'()>{{quote.dislikes}} <i class="fa fa-thumbs-down" id="dislike"></i></button>
+<!-- <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button>  -->

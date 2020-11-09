@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote.component.css'],
 })
       export class QuoteComponent implements OnInit{
+
        quotes: Quote[] = [
-        new Quote(1, 'Gladys', 'Nimo', 'you are the best'),
-        new Quote(2,'Grace', 'shiko', 'forever you are'),
+        new Quote(1, 'Gladys', 'Nimo', 'you are the best', 0,0),
+        new Quote(2,'Grace', 'shiko', 'forever you are', 0,0),
        ];
     
-  quoteDetails(index) {
+  displayQuoteDetails(index) {
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
 
