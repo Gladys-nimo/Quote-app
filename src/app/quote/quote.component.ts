@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
       export class QuoteComponent implements OnInit{
        quotes: Quote[] = [
-         new Quote('Gladys','you are always right','Upvote'),
-         new Quote('Grace','you are always perfect','Downvote'),
+         new Quote('you are always right','Gladys'),
+         new Quote('you are always perfect','Grace'),
        ];
-  showDetails(index) {
+  quoteDetails(index) {
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
 
