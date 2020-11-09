@@ -1,9 +1,15 @@
+<div class="container">
+    <div class="row">
+            <div class="col-md-6">
+         <div *ngFor='let quote of quotes;let i = index'>
+              <h1>{{quote.author}}</h1>
+              <button (click)='quoteDetails(i)'>Quote Details</button>
+            <app-quote-details *ngIf='quote.showDetails' [quote]='quote'></app-quote-details>
+         
+        </div>
+    
+    </div>
 
-<div>
-    <ul>
-        <li *ngFor='let quote of quotes'>
-             {{quote.name}}
-        </li>
-    </ul>
-    <!-- <app-quote-form></app-quote-form> -->
 </div>
+</div>
+

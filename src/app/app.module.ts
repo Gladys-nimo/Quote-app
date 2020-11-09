@@ -1,19 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { NgModule, Component } from '@angular/core';
+
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
-import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { from } from 'rxjs';
-import { VoteComponent } from './vote/vote.component';
+import { LikeComponent } from './like/like.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteFormComponent,
-    VoteComponent
+     LikeComponent,
+     QuoteDetailsComponent,
+  
   ],
   imports: [
     BrowserModule,
