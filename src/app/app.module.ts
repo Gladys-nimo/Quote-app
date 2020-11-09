@@ -10,6 +10,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { from } from 'rxjs';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -19,6 +20,7 @@ import { from } from 'rxjs';
     QuoteComponent,
     QuoteDetailsComponent,
      QuoteFormComponent,
+     HighlightDirective,
   ],
   imports: [
     BrowserModule,
