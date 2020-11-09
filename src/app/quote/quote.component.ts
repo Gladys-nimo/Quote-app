@@ -15,6 +15,12 @@ import { Component, OnInit } from '@angular/core';
   showDetails(index) {
     this.quotes[index].showQuoteDetails = !this.quotes[index].showQuoteDetails;
   }
+
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
    constructor() {}
 
   ngOnInit(): void {
