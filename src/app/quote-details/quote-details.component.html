@@ -1,2 +1,8 @@
-<p>{{quote.description}}</p>
-<button (click)= 'quoteComplete(true)'>Complete</button>
+<p> this quote {{quote.quote}} is published 
+    {{quote.name}} and 
+    the author is {{quote.author}}
+</p>
+
+<button class="col btn btn-success" (click)= 'likeButtonClick'>like</button>
+<br>
+<button class="col btn btn-danger" (click)= 'dislikeButtonClick'>dislike</button>
